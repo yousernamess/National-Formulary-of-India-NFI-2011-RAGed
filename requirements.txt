@@ -1,0 +1,25 @@
+# PDF parsing
+pypdf>=3.17.0
+
+# LangChain core + community integrations
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-huggingface>=0.0.3
+
+# Embeddings (runs locally, no API key required)
+sentence-transformers>=2.7.0
+
+# Vector store
+chromadb>=0.5.0
+
+# LLM backend — OpenAI (set OPENAI_API_KEY env var)
+# Swap for another provider by editing rag.py / app.py
+openai>=1.30.0
+langchain-openai>=0.1.8
+
+# Streamlit UI
+streamlit>=1.35.0
+
+# Utilities
+python-dotenv>=1.0.0
+tqdm>=4.66.0
