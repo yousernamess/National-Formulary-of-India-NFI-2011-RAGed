@@ -155,5 +155,9 @@ if __name__ == "__main__":
     print(result["answer"])
     print("\n=== Sources ===")
     for src in result["sources"]:
-        print(f"  • NFI page {src['page']} (chunk {src['chunk']}): "
-              f"{src['text'][:120].replace('\\n', ' ')} …")
+        clean_text = src["text"][:120].replace("\n", " ")
+
+        print(
+            f"  • NFI page {src['page']} (chunk {src['chunk']}): "
+            f"{clean_text} …"
+        )
